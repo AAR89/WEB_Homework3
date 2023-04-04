@@ -13,6 +13,6 @@ const a = prompt('Введите температуру в градусах Це
 alert(`Цельсий: ${a}, Фаренгейт: ${f(a)}`);
 
 function f(a) {
-    return (9 / 5) * a + 32;
+    return Math.round(((9 / 5) * a + 32) * 100) / 100;
 }
 
